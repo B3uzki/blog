@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/01/01/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<span id="more"></span>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>test</category>
-      </categories>
-  </entry>
-  <entry>
     <title>伽罗瓦域</title>
     <url>/2020/06/20/Galois-Field/</url>
     <content><![CDATA[<blockquote>
@@ -319,92 +296,26 @@
       </tags>
   </entry>
   <entry>
-    <title>McColor V4.0 摸鱼日志 (1)</title>
-    <url>/2021/12/26/mccolor-0/</url>
-    <content><![CDATA[<blockquote>
-<p>在群员的催促下，本鸽子经历了无数次挣扎，最终在12/26的深夜决定，开始McColor服务器4.0的 <del>摸鱼</del> 开发…</p>
-</blockquote>
+    <title>Hello World</title>
+    <url>/2020/01/01/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
-<h2 id="0x00-初期准备"><a href="#0x00-初期准备" class="headerlink" title="0x00 初期准备"></a>0x00 初期准备</h2><blockquote>
-<p>好的开始，是成功的一半</p>
-</blockquote>
-<p>毕竟也当了几年服主，这期间整过的服务器数不胜数，博主想当然认为开服不是什么难事。不过之前咕了这么久也不是没有理由，此前一直在纠结服务器的题材，即使是现在，也没有什么明确的想法。于是，博主决定先细化初期的准备工作。</p>
-<p>最先想到的，还是硬件上的问题。博主现在仅有的，只是一台几年前的电脑，还时不时蓝屏，在这种环境下开服想必是不可能的，国内的服务商的价格对学生党也过于高昂。在一筹莫展之际，突然收到某个朋友的留言。</p>
-<blockquote>
-<p>朋友： 最近是不是准备开服了</p>
-</blockquote>
-<blockquote>
-<p>博主： 怎么了？</p>
-</blockquote>
-<blockquote>
-<p>朋友： 要不要合作</p>
-</blockquote>
-<p>朋友居然会找博主这个菜鸡合作，那我自然是恭敬不如从命</p>
-<p>于是，硬件问题就这样解决了，现在最棘手的是依然是服务器的题材，不过在这之前，博主决定先确定准备工作与计划</p>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>服务端，主要由三部分组成：核心，插件，地图</p>
-<p>博主一直有个奇怪的爱好，服务端版本一定要是最新的，即使这会带来很多不稳定的因素，也会浪费不必要的时间，但最新的版本总是会给博主带来安全感（Log4j 0day CVE 漏洞就是很好的例子）。<br>不过在现在（2021年12月），最新的1.18.1服务端仍然在早期版本，于是博主决定先以1.17.1为核心版本，后期再进行升级（咕咕咕）。</p>
-<p>选择高版本服务器需要面对不少问题，最大的困难就是缺少成熟的插件与模组支持。如今mc服务器快餐化，同质化严重，放弃模组很可能导致服务器失去竞争力，而前几个版本的mccolor服务器也印证了这一点。当博主使用网站上现成的模组服务端时，反而能有不错的成效；但当博主搭建原版服务器时，即使花上比原来多数倍的精力，也很难比得上模组服务器。</p>
-<p>但博主就是想整高版本服务器，开服只是个人兴趣，玩家数量并不是考虑的范围。</p>
-<p>因此，核心的选择为：1.17.1 Paper</p>
-<p>插件选择：取决于服务器的题材，因此先不进行讨论</p>
-<p>地图制作：为了减少成本，决定沿用上一版本的服务器。</p>
-<p>由上，给出任务计划</p>
-<table>
-<thead>
-<tr>
-<th align="center">时间</th>
-<th align="left">任务</th>
-<th align="center">时长</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">week1</td>
-<td align="left">系统及环境安装</td>
-<td align="center">1days</td>
-</tr>
-<tr>
-<td align="center">week1</td>
-<td align="left">服务端安装</td>
-<td align="center">1days</td>
-</tr>
-<tr>
-<td align="center">week2</td>
-<td align="left">相关插件安装</td>
-<td align="center">1days</td>
-</tr>
-<tr>
-<td align="center">week2</td>
-<td align="left">插件初步配置</td>
-<td align="center">1days</td>
-</tr>
-<tr>
-<td align="center">week5</td>
-<td align="left">插件优化及排错</td>
-<td align="center">3days</td>
-</tr>
-<tr>
-<td align="center">week6</td>
-<td align="left">玩法设计</td>
-<td align="center">7days</td>
-</tr>
-<tr>
-<td align="center">week7</td>
-<td align="left">公测，debug</td>
-<td align="center">3days</td>
-</tr>
-</tbody></table>
-<p>注：week1为 2021-12-26(日)-2022-1-1(土)</p>
-<h2 id="0x01-后续"><a href="#0x01-后续" class="headerlink" title="0x01 后续"></a>0x01 后续</h2><p>进行了任务计划后，突然觉得前路漫漫，迷茫，无助</p>
-<p>麻了</p>
-<p>咕咕咕</p>
-<p>ps：博主第一次写日志。读了下这篇文，感觉写的很乱，不该写的写了一堆。</p>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
-        <category>mccolor</category>
+        <category>test</category>
       </categories>
-      <tags>
-        <tag>我真的不是鸽子</tag>
-        <tag>mccolor</tag>
-      </tags>
   </entry>
 </search>
